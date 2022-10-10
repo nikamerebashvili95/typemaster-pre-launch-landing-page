@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 24px 0 24px;
+}
+.header--btn{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #162542;
+    border: none;
+    cursor: pointer;
+    background-color: #E8EFF2;
+    border-radius: 8px;
+    padding: 11px 14px;
+    transition: 0.4s;
+}
+.header--btn:hover{
+    color: #FFFFFF;
+    background-color: #162542;
+}
+.order--container{
+    /*padding: 0 24px;*/
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 60px;
+    display: inline-block;
+}
+.order--title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #162542;
+    margin-bottom: 32px;
+}
+.order--text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+.order--btn{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F16718;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.4s;
+    
+}
+.order--btn:hover{
+    background-color: #FF9B62;
+}
+.order--btn--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+.order--btn--container span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #7B8BAD;
+}
+.keyboard--img__mobile{
+    width: 100%;
+    border-radius: 24px 0 0 24px;
+    margin-top: 64px;
+    margin-left: 24px;
+}
+.keyboard--img__tablet,
+.keyboard--img__desktop,
+.right--square,
+.left--square{
+    display: none;
+}
+/******* WIRELESS KEYBOARD ********/
+.wireless--images{
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    margin-bottom: 75px;
+}
+.left__img{
+    width: 100%;
+    border-radius: 0 24px 24px 0;
+}
+.right__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+.wireless--title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+    margin-bottom: 24px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.wireless--text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+/******* KEYBOARD INFORMATION ********/
+
+.cards{
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    margin-top: 110px;
+    margin-bottom: 96px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+.keyboard--info__title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+    margin: 0 50px;
+}
+.keyboard--info__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+}
+footer p{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    text-align: center;
+}
+footer span{
+    font-weight: 700;
+}
+@media (min-width: 689px){
+    
+    nav{
+        margin: 40px 40px 0 40px;
+    }
+    .header--btn{
+        padding: 16px 27px;
+    }
+    .order--container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 69px;
+        margin-left: 39px;
+        margin-right: 0;
+    }
+    .keyboard--img__mobile,
+    .keyboard--img__desktop,
+    .right--square,
+    .left--square{
+        display: none;
+    }
+    .keyboard--img__tablet{
+        display: block;
+        width: 100%;
+    }
+    .wireless--images{
+        margin-left: 39px;
+        margin-right: 39px;
+    }
+    .wireless--content{
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        margin-left: 39px;
+        margin-right: 39px;
+    }
+    .wireless--title{
+        margin: 0;
+    }
+    .wireless--text{
+        margin: 0;
+    }
+    .cards{
+        margin-top: 142px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 142px;
+    }
+    .card{
+        align-items: baseline;
+    }
+    .keyboard--info__title{
+        margin: 0px;
+        text-align: left;
+    }
+    .keyboard--info__text{
+        margin: 0px;
+        text-align: left;
+    }
+}
+@media (min-width: 1110px){
+    .main-container{
+        width: 1110px;
+        margin: 0 auto;
+    }
+    .order--title{
+        font-size: 56px;
+        line-height: 56px;
+    }
+    .order--text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .order--btn{
+        padding: 16px 27px;
+    }
+    .order--container{
+        gap: 125px;
+    }
+    .keyboard--img__mobile,
+    .keyboard--img__tablet,
+    .right--square,
+    .left--square{
+        display: none;
+    }
+    .keyboard--img__desktop{
+        display: block;
+        width: 540px;
+    }
+    .left__img{
+        height: 480px;
+    }
+    .right__img{
+        height: 480px;
+    }
+    .wireless--container{
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .wireless--content{
+        width: 255px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1410px){
+    .keyboard--img-container{
+        position: relative;
+    }
+    .right--square{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -28%;
+    }
+    .wireless--container{
+        position: relative;
+    }
+    .left--square{
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: -13.7%;
+    }
+}
